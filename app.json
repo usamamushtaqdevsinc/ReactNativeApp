@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "ExpenseTracker",
+    "slug": "ExpenseTracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyCGUhGhAxNpYdSa6hmvMe6DFiy-bXfPauI"
+      },
+      "bundleIdentifier": "com.usamamushtaq.ExpenseTracker"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCGUhGhAxNpYdSa6hmvMe6DFiy-bXfPauI"
+        }
+      },
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "package": "com.usamamushtaq.ExpenseTracker"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "cameraPermission": "The app needs to access to your camera in order to take photos of your favorite."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8d2ab050-fc01-42e9-8a9f-5993a109ac11"
+      }
+    }
+  }
+}
